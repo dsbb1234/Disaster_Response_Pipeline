@@ -42,37 +42,37 @@ There were some issues with this model that should be adressed in future models:
 
 ### Files in the Repository
 
-- app
-| - template
-| |- master.html  # main page of web app
-| |- go.html  # classification result page of web app
+- app <br>
+| - template <br>
+| |- master.html  # main page of web app <br>
+| |- go.html  # classification result page of web app <br>
 |- run.py  # Flask file that runs app
 
-- data
-|- disaster_categories.csv  # contains the message id and the categories the message was assigned to
-|- disaster_messages.csv  # contains the message id, message, original message (before translation) and the message genre
-|- process_data.py
+- data <br>
+|- disaster_categories.csv  # contains the message id and the categories the message was assigned to <br>
+|- disaster_messages.csv  # contains the message id, message, original message (before translation) and the message genre <br>
+|- process_data.py <br>
 |- InsertDatabaseName.db   # database to save clean data to
 
-- models
-|- train_classifier.py - the Machine Learning Pipeline code
-|- DisasterResponse.db - this is the output of the ETL pipeline (an SQLite database) containing the cleaned message information (merged messages and categories)
-|- classifier.pkl  # saved model as a pickle file
+- models <br>
+|- train_classifier.py - the Machine Learning Pipeline code <br>
+|- DisasterResponse.db - this is the output of the ETL pipeline (an SQLite database) containing the cleaned message information (merged messages and categories) <br>
+|- classifier.pkl  # saved model as a pickle file <br>
 |- starting_verb_extractor.py - contains the tokenize and StartingVerbExtractor functions
 
-- Snapshots
-|- pict_process_data.png - snapshot showing successful execution of the process_data.py program
-|- pict_train_classifier_py.png - snapshot executing the train_classifier.py program
-|- pict_train_classifier_py2.png - snapshot showing successful completion of the train_classifier.py program.
-|- pict_run.png - snapshot executing the run.py program
-|- pict_run_py2.png - snapshot showing the train_classifier.py program completing and saving the training model
-|- pic_run_py_for_web6.png - snapshot showing the program taking the input from the web page for classification.
-|- pic_web1.png - Header for the web page, allowing the submission of a message for categorization
-|- pic_web2.png - First chart: Message Genre Distribution, supplied by Udacity
-|- pic_web3.png - Second chart: Message Category Distribution Bar Chart
-|- pic_web4.png - Third chart:  Percentage of Direct/Indirectly Reported Messages
-|- pic_web5.png - Example of a message that was submitted to the web page for classification
-|- pic_web6.png - Result of classification, showing the message was "Related", "Aid Related", "Other Aid", and "Storm"
+- Snapshots <br>
+|- pict_process_data.png - snapshot showing successful execution of the process_data.py program <br>
+|- pict_train_classifier_py.png - snapshot executing the train_classifier.py program <br>
+|- pict_train_classifier_py2.png - snapshot showing successful completion of the train_classifier.py program. <br>
+|- pict_run.png - snapshot executing the run.py program <br>
+|- pict_run_py2.png - snapshot showing the train_classifier.py program completing and saving the training model <br>
+|- pic_run_py_for_web6.png - snapshot showing the program taking the input from the web page for classification. <br>
+|- pic_web1.png - Header for the web page, allowing the submission of a message for categorization <br>
+|- pic_web2.png - First chart: Message Genre Distribution, supplied by Udacity <br>
+|- pic_web3.png - Second chart: Message Category Distribution Bar Chart <br>
+|- pic_web4.png - Third chart:  Percentage of Direct/Indirectly Reported Messages <br>
+|- pic_web5.png - Example of a message that was submitted to the web page for classification <br>
+|- pic_web6.png - Result of classification, showing the message was "Related", "Aid Related", "Other Aid", and "Storm" 
 
 ### Program Execution
 
@@ -90,3 +90,6 @@ The program can be executed by running the following commands from the terminal:
 3. Go to http://0.0.0.0:3001/<br>
 
 Udacity provided a Flask app to allow display of results, in the run.py python program.<br>
+
+Acknowledgements:
+Data for this project was supplied by Udacity from Figure Eight.  Information about Figure Eight can be found at the following URL:  https://www.figure-eight.com/
